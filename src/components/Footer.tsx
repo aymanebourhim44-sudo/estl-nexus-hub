@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoEst} alt="EST Laâyoune" className="h-12 w-12 object-contain bg-primary-foreground rounded-lg p-1" />
+              <img src={logoUiz} alt="Université Ibn Zohr" className="h-12 object-contain bg-primary-foreground rounded-lg p-1" />
               <div>
                 <p className="font-heading font-bold text-lg">EST Laâyoune</p>
                 <p className="text-sm text-primary-foreground/70">Université Ibn Zohr</p>
