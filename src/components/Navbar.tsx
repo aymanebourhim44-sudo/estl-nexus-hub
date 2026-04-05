@@ -31,7 +31,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoEst} alt="EST Laâyoune" className="h-10 w-10 object-contain" />
+          <img src={logoUiz} alt="Université Ibn Zohr" className="h-10 object-contain" />
           <div className="hidden sm:block">
             <p className="text-sm font-bold font-heading text-primary leading-tight">EST Laâyoune</p>
             <p className="text-xs text-muted-foreground">Université Ibn Zohr</p>

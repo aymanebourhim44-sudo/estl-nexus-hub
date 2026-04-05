@@ -59,11 +59,6 @@ const HeroSection = () => {
                 {t("nav.resources", lang)}
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground font-semibold" asChild>
-              <Link to="/about">
-                <PlayCircle className="mr-2 h-5 w-5" /> {t("hero.discover", lang)}
-              </Link>
-            </Button>
           </div>
         </motion.div>
       </div>
