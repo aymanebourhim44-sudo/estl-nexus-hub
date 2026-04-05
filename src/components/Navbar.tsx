@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "@/lib/LangContext";
 import { t, type Lang } from "@/lib/i18n";
-import logoEst from "@/assets/logo-est.png";
+import logoUiz from "@/assets/logo-uiz.png";
 
 const langLabels: Record<Lang, string> = { fr: "FR", ar: "عربي", en: "EN" };
 
