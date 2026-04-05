@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
-import logoEst from "@/assets/logo-est.png";
 import logoUiz from "@/assets/logo-uiz.png";
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoEst} alt="EST Laâyoune" className="h-12 w-12 object-contain bg-primary-foreground rounded-lg p-1" />
+              <img src={logoUiz} alt="Université Ibn Zohr" className="h-12 object-contain bg-primary-foreground rounded-lg p-1" />
               <div>
                 <p className="font-heading font-bold text-lg">EST Laâyoune</p>
                 <p className="text-sm text-primary-foreground/70">Université Ibn Zohr</p>
@@ -87,8 +86,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container py-4 text-center text-xs text-primary-foreground/50">
           <div className="flex items-center justify-center gap-4 mb-2">
-            <img src={logoEst} alt="EST Laâyoune" className="h-8 w-8 object-contain" />
-            <img src={logoUiz} alt="Université Ibn Zohr" className="h-8 object-contain" />
+            <img src={logoUiz} alt="Université Ibn Zohr" className="h-10 object-contain" />
           </div>
           © {new Date().getFullYear()} EST Laâyoune — Université Ibn Zohr. {t("footer.rights", lang)}.
         </div>

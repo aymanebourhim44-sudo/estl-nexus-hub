@@ -15,7 +15,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "hero.title": { fr: "École Supérieure de Technologie", ar: "المدرسة العليا للتكنولوجيا", en: "Higher School of Technology" },
   "hero.subtitle": { fr: "de Laâyoune", ar: "بالعيون", en: "of Laayoune" },
   "hero.desc": { fr: "Université Ibn Zohr — Excellence académique au cœur du Sahara", ar: "جامعة ابن زهر — التميز الأكاديمي في قلب الصحراء", en: "Ibn Zohr University — Academic excellence in the heart of the Sahara" },
-  "hero.cta": { fr: "Pré-inscription", ar: "التسجيل القبلي", en: "Pre-Registration" },
+  "hero.cta": { fr: "Nos Formations", ar: "تكويناتنا", en: "Our Programs" },
   "hero.discover": { fr: "Découvrir nos formations", ar: "اكتشف تكويناتنا", en: "Discover our programs" },
   "stats.students": { fr: "Étudiants", ar: "طلاب", en: "Students" },
   "stats.faculty": { fr: "Enseignants", ar: "أساتذة", en: "Faculty" },

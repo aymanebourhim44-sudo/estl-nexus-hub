@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "@/lib/LangContext";
 import { t, type Lang } from "@/lib/i18n";
-import logoEst from "@/assets/logo-est.png";
+import logoUiz from "@/assets/logo-uiz.png";
 
 const langLabels: Record<Lang, string> = { fr: "FR", ar: "عربي", en: "EN" };
 
@@ -31,7 +31,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoEst} alt="EST Laâyoune" className="h-10 w-10 object-contain" />
+          <img src={logoUiz} alt="Université Ibn Zohr" className="h-10 object-contain" />
           <div className="hidden sm:block">
             <p className="text-sm font-bold font-heading text-primary leading-tight">EST Laâyoune</p>
             <p className="text-xs text-muted-foreground">Université Ibn Zohr</p>
