@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-                <span className="text-primary-foreground/70">B.P 3007, Quartier 25 Mars, Laâyoune, Maroc</span>
+                <span className="text-primary-foreground/70">Laâyoune – Maroc</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
