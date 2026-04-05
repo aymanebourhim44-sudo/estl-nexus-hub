@@ -4,17 +4,16 @@ import { Button } from "@/components/ui/button";
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import heroCampus from "@/assets/hero-campus.jpg";
+import campusCourtyard from "@/assets/campus-courtyard.jpg";
 
 const HeroSection = () => {
   const { lang } = useLang();
 
   return (
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={heroCampus}
+          src={campusCourtyard}
           alt="Campus EST Laâyoune"
           className="h-full w-full object-cover"
           width={1920}
@@ -23,7 +22,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-hero-gradient opacity-80" />
       </div>
 
-      {/* Content */}
       <div className="container relative z-10 py-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -65,15 +63,14 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Announcement Ticker */}
       <div className="absolute bottom-0 left-0 right-0 bg-accent/90 text-accent-foreground">
         <div className="overflow-hidden py-2.5">
           <div className="ticker-scroll flex whitespace-nowrap gap-16">
             {[...Array(2)].map((_, i) => (
               <span key={i} className="flex gap-16 text-sm font-medium">
-                <span>📢 Dates de rattrapage session automne disponibles</span>
+                <span>📢 Hackathon Smart Sahara — 31 mai au 1er juin 2025</span>
                 <span>📋 Inscriptions ouvertes pour l'année 2025-2026</span>
-                <span>🎓 Résultats des examens du semestre S1 publiés</span>
+                <span>🎓 Premier Master Class International : Innovation Technologique et IA</span>
                 <span>🏆 EST Laâyoune classée parmi les meilleures EST du Maroc</span>
               </span>
             ))}

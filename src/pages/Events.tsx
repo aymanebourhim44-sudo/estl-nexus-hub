@@ -2,30 +2,50 @@ import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
-import labCs from "@/assets/lab-cs.jpg";
+import campusCourtyard from "@/assets/campus-courtyard.jpg";
+import campusBuilding from "@/assets/campus-building.jpg";
 import campusLife from "@/assets/campus-life.jpg";
-import heroCampus from "@/assets/hero-campus.jpg";
 
 const events = [
   {
-    id: 1, image: labCs, date: "2025-03-15",
-    title: { fr: "Journée portes ouvertes 2025", ar: "يوم الأبواب المفتوحة 2025", en: "Open Day 2025" },
-    desc: { fr: "Venez découvrir nos formations, rencontrer nos enseignants et visiter nos laboratoires.", ar: "تعالوا لاكتشاف تكويناتنا ولقاء أساتذتنا وزيارة مختبراتنا.", en: "Come discover our programs, meet our faculty and visit our labs." },
+    id: 1, image: campusCourtyard, date: "2025-05-31",
+    title: { fr: "Hackathon Smart Sahara", ar: "هاكاثون سمارت صحراء", en: "Smart Sahara Hackathon" },
+    desc: { fr: "Innover pour un Sahara durable et intelligent — 31 mai au 1er juin 2025 à l'École Supérieure de Technologie de Laâyoune. Gratuit.", ar: "الابتكار من أجل صحراء مستدامة وذكية — 31 ماي إلى 1 يونيو 2025 بالمدرسة العليا للتكنولوجيا بالعيون.", en: "Innovating for a sustainable and smart Sahara — May 31 to June 1, 2025 at EST Laayoune. Free." },
   },
   {
-    id: 2, image: campusLife, date: "2025-02-28",
-    title: { fr: "Convention de partenariat", ar: "اتفاقية شراكة", en: "Partnership Convention" },
-    desc: { fr: "Signature de conventions avec des entreprises régionales pour les stages et l'insertion professionnelle.", ar: "توقيع اتفاقيات مع شركات إقليمية للتدريب والإدماج المهني.", en: "Signing partnerships with regional companies for internships." },
+    id: 2, image: campusBuilding, date: "2025-05-13",
+    title: { fr: "Premier Master Class International : Innovation Technologique, IA et Économique", ar: "أول ماستر كلاس دولي: الابتكار التكنولوجي والذكاء الاصطناعي", en: "First International Master Class: Tech Innovation, AI & Economics" },
+    desc: { fr: "Du 13 au 15 mai 2025 à l'École Supérieure de Technologie de Laâyoune. Gratuit.", ar: "من 13 إلى 15 ماي 2025 بالمدرسة العليا للتكنولوجيا بالعيون. مجاني.", en: "May 13-15, 2025 at EST Laayoune. Free." },
   },
   {
-    id: 3, image: heroCampus, date: "2025-02-10",
-    title: { fr: "Séminaire sur l'IA et Big Data", ar: "ندوة حول الذكاء الاصطناعي", en: "AI & Big Data Seminar" },
-    desc: { fr: "Un séminaire animé par des experts du domaine sur les perspectives de l'intelligence artificielle.", ar: "ندوة يؤطرها خبراء حول آفاق الذكاء الاصطناعي.", en: "A seminar led by experts on AI perspectives." },
+    id: 3, image: campusLife, date: "2025-02-18",
+    title: { fr: "1er Symposium International en Économie et Finance", ar: "الندوة الدولية الأولى في الاقتصاد والمالية", en: "1st International Symposium on Economics & Finance" },
+    desc: { fr: "L'Économie et la Finance à l'ère de la Transformation Numérique et l'Intelligence Artificielle : Implications, Enjeux et Perspectives.", ar: "الاقتصاد والمالية في عصر التحول الرقمي والذكاء الاصطناعي: التحديات والآفاق.", en: "Economics and Finance in the era of Digital Transformation and AI: Implications and Perspectives." },
   },
   {
-    id: 4, image: labCs, date: "2025-01-20",
-    title: { fr: "Compétition Hackathon 2025", ar: "مسابقة هاكاثون 2025", en: "Hackathon Competition 2025" },
-    desc: { fr: "48h de code pour résoudre des problématiques réelles proposées par nos partenaires industriels.", ar: "48 ساعة من البرمجة لحل إشكاليات حقيقية.", en: "48h of coding to solve real-world problems from our industrial partners." },
+    id: 4, image: campusCourtyard, date: "2024-06-08",
+    title: { fr: "Cérémonie de remise des diplômes — Promotion 2023-2024", ar: "حفل تخرج طلبة الدفعة التاسعة للسنة الجامعية 2023-2024", en: "Graduation Ceremony — Class of 2023-2024" },
+    desc: { fr: "Cérémonie de remise des diplômes de la 9ème promotion de l'EST Laâyoune.", ar: "حفل تخرج طلبة المدرسة العليا للتكنولوجيا الدفعة التاسعة.", en: "Graduation ceremony for the 9th class of EST Laayoune." },
+  },
+  {
+    id: 5, image: campusBuilding, date: "2024-06-04",
+    title: { fr: "Conférence MENM24 — Matériaux, Énergie et Modélisation Numérique", ar: "المؤتمر الأول حول المواد والطاقة والنمذجة الرقمية", en: "MENM24 — Materials, Energy and Numerical Modeling" },
+    desc: { fr: "The First Conference on Materials, Energy and Numerical Modeling à l'EST Laâyoune, 4-5 juin 2024.", ar: "المؤتمر الأول حول المواد والطاقة والنمذجة الرقمية بالمدرسة العليا للتكنولوجيا بالعيون.", en: "The First Conference on Materials, Energy and Numerical Modeling at EST Laayoune, June 4-5, 2024." },
+  },
+  {
+    id: 6, image: campusLife, date: "2024-05-31",
+    title: { fr: "Workshop : Sécurité et Sûreté Biologique", ar: "ورشة عمل: الأمن والسلامة البيولوجية", en: "Workshop: Biological Safety & Security" },
+    desc: { fr: "Pratiques et Exigences en Environnement Médical et Technologique. Organisé en collaboration avec l'EST de Laâyoune.", ar: "الممارسات والمتطلبات في البيئة الطبية والتكنولوجية.", en: "Practices and Requirements in Medical and Technological Environment." },
+  },
+  {
+    id: 7, image: campusCourtyard, date: "2024-06-03",
+    title: { fr: "المناظرات الجهوية — جهة العيون الساقية الحمراء", ar: "المناظرات الجهوية — جهة العيون الساقية الحمراء", en: "Regional Debates — Laâyoune-Sakia El Hamra Region" },
+    desc: { fr: "Le Plan national pour accélérer la transformation du système d'enseignement supérieur, de recherche scientifique et d'innovation (PACTE ESRI 2030).", ar: "المخطط الوطني لتسريع تحول منظومة التعليم العالي والبحث العلمي والابتكار.", en: "National plan to accelerate the transformation of the higher education system (PACTE ESRI 2030)." },
+  },
+  {
+    id: 8, image: campusBuilding, date: "2023-06-10",
+    title: { fr: "Cérémonie de remise des diplômes — Promotion 2022-2023", ar: "حفل تخرج طلبة الدفعة الثامنة للسنة الجامعية 2022-2023", en: "Graduation Ceremony — Class of 2022-2023" },
+    desc: { fr: "Cérémonie de remise des diplômes de la 8ème promotion de l'EST Laâyoune.", ar: "حفل تخرج طلبة المدرسة العليا للتكنولوجيا الدفعة الثامنة.", en: "Graduation ceremony for the 8th class of EST Laayoune." },
   },
 ];
 
