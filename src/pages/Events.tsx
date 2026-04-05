@@ -5,6 +5,7 @@ import { t } from "@/lib/i18n";
 import campusCourtyard from "@/assets/campus-courtyard.jpg";
 import campusBuilding from "@/assets/campus-building.jpg";
 import campusLife from "@/assets/campus-life.jpg";
+import eventFestival from "@/assets/event-festival-astronomie.png";
 
 const events = [
   {
@@ -18,9 +19,9 @@ const events = [
     desc: { fr: "Du 13 au 15 mai 2025 à l'École Supérieure de Technologie de Laâyoune. Gratuit.", ar: "من 13 إلى 15 ماي 2025 بالمدرسة العليا للتكنولوجيا بالعيون. مجاني.", en: "May 13-15, 2025 at EST Laayoune. Free." },
   },
   {
-    id: 3, image: campusLife, date: "2025-02-18",
-    title: { fr: "1er Symposium International en Économie et Finance", ar: "الندوة الدولية الأولى في الاقتصاد والمالية", en: "1st International Symposium on Economics & Finance" },
-    desc: { fr: "L'Économie et la Finance à l'ère de la Transformation Numérique et l'Intelligence Artificielle : Implications, Enjeux et Perspectives.", ar: "الاقتصاد والمالية في عصر التحول الرقمي والذكاء الاصطناعي: التحديات والآفاق.", en: "Economics and Finance in the era of Digital Transformation and AI: Implications and Perspectives." },
+    id: 3, image: eventFestival, date: "2026-04-03",
+    title: { fr: "4ème Festival Printanier Universitaire — Astronomie", ar: "المهرجان الربيعي الجامعي الرابع — علم الفلك", en: "4th University Spring Festival — Astronomy" },
+    desc: { fr: "« Astronomie : Regards vers l'Infini » — Du 3 au 5 avril 2026 à l'École Supérieure de Technologie de Laâyoune. En collaboration avec l'AAMF.", ar: "« علم الفلك: نظرات نحو اللانهاية » — من 3 إلى 5 أبريل 2026 بالمدرسة العليا للتكنولوجيا بالعيون.", en: "\"Astronomy: Gazing into Infinity\" — April 3-5, 2026 at EST Laayoune. In collaboration with AAMF." },
   },
   {
     id: 4, image: campusCourtyard, date: "2024-06-08",

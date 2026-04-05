@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-                <span className="text-primary-foreground/70">B.P 3007, Quartier 25 Mars, Laâyoune, Maroc</span>
+                <span className="text-primary-foreground/70">Laâyoune – Maroc</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-accent" />
-                <span className="text-primary-foreground/70">est.laayoune@uiz.ac.ma</span>
+                <span className="text-primary-foreground/70">estl@uiz.ac.ma</span>
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
               <a href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="https://www.instagram.com/est_laayoune" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+              <a href="https://www.instagram.com/est_laayoune/" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
               <a href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">

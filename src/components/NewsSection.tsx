@@ -6,7 +6,7 @@ import { t } from "@/lib/i18n";
 import { Link } from "react-router-dom";
 import campusCourtyard from "@/assets/campus-courtyard.jpg";
 import campusBuilding from "@/assets/campus-building.jpg";
-import campusLife from "@/assets/campus-life.jpg";
+import eventFestival from "@/assets/event-festival-astronomie.png";
 
 const newsItems = [
   {
@@ -33,13 +33,13 @@ const newsItems = [
   },
   {
     id: 3,
-    image: campusLife,
-    date: "2025-02-18",
-    title: { fr: "Symposium International en Économie et Finance", ar: "ندوة دولية في الاقتصاد والمالية", en: "International Symposium on Economics & Finance" },
+    image: eventFestival,
+    date: "2026-04-03",
+    title: { fr: "4ème Festival Printanier Universitaire — Astronomie", ar: "المهرجان الربيعي الجامعي الرابع — علم الفلك", en: "4th University Spring Festival — Astronomy" },
     summary: {
-      fr: "L'Économie et la Finance à l'ère de la Transformation Numérique et l'Intelligence Artificielle.",
-      ar: "الاقتصاد والمالية في عصر التحول الرقمي والذكاء الاصطناعي.",
-      en: "Economics and Finance in the era of Digital Transformation and AI."
+      fr: "« Astronomie : Regards vers l'Infini » — Du 3 au 5 avril 2026 à l'EST de Laâyoune.",
+      ar: "« علم الفلك: نظرات نحو اللانهاية » — من 3 إلى 5 أبريل 2026 بالمدرسة العليا للتكنولوجيا بالعيون.",
+      en: "\"Astronomy: Gazing into Infinity\" — April 3-5, 2026 at EST Laayoune."
     },
   },
 ];
