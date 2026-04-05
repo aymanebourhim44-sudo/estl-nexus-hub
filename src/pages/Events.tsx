@@ -5,6 +5,7 @@ import { t } from "@/lib/i18n";
 import campusCourtyard from "@/assets/campus-courtyard.jpg";
 import campusBuilding from "@/assets/campus-building.jpg";
 import campusLife from "@/assets/campus-life.jpg";
+import eventFestival from "@/assets/event-festival-astronomie.png";
 
 const events = [
   {
