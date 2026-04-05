@@ -86,6 +86,10 @@ const Footer = () => {
       </div>
       <div className="border-t border-primary-foreground/10">
         <div className="container py-4 text-center text-xs text-primary-foreground/50">
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <img src={logoEst} alt="EST Laâyoune" className="h-8 w-8 object-contain" />
+            <img src={logoUiz} alt="Université Ibn Zohr" className="h-8 object-contain" />
+          </div>
           © {new Date().getFullYear()} EST Laâyoune — Université Ibn Zohr. {t("footer.rights", lang)}.
         </div>
       </div>
