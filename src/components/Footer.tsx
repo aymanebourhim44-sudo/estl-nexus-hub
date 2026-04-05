@@ -3,6 +3,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
 import logoEst from "@/assets/logo-est.png";
+import logoUiz from "@/assets/logo-uiz.png";
 
 const Footer = () => {
   const { lang } = useLang();
@@ -63,7 +64,7 @@ const Footer = () => {
               <a href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+              <a href="https://www.instagram.com/est_laayoune" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
               <a href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -85,6 +86,10 @@ const Footer = () => {
       </div>
       <div className="border-t border-primary-foreground/10">
         <div className="container py-4 text-center text-xs text-primary-foreground/50">
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <img src={logoEst} alt="EST Laâyoune" className="h-8 w-8 object-contain" />
+            <img src={logoUiz} alt="Université Ibn Zohr" className="h-8 object-contain" />
+          </div>
           © {new Date().getFullYear()} EST Laâyoune — Université Ibn Zohr. {t("footer.rights", lang)}.
         </div>
       </div>

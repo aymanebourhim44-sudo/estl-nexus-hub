@@ -4,42 +4,42 @@ import { Button } from "@/components/ui/button";
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import labCs from "@/assets/lab-cs.jpg";
+import campusCourtyard from "@/assets/campus-courtyard.jpg";
+import campusBuilding from "@/assets/campus-building.jpg";
 import campusLife from "@/assets/campus-life.jpg";
-import heroCampus from "@/assets/hero-campus.jpg";
 
 const newsItems = [
   {
     id: 1,
-    image: labCs,
-    date: "2025-03-15",
-    title: { fr: "Journée portes ouvertes 2025", ar: "يوم الأبواب المفتوحة 2025", en: "Open Day 2025" },
+    image: campusCourtyard,
+    date: "2025-05-31",
+    title: { fr: "Hackathon Smart Sahara", ar: "هاكاثون سمارت صحراء", en: "Smart Sahara Hackathon" },
     summary: {
-      fr: "Découvrez nos formations et rencontrez nos enseignants lors de notre journée portes ouvertes annuelle.",
-      ar: "اكتشف تكويناتنا وتعرف على أساتذتنا خلال يومنا المفتوح السنوي.",
-      en: "Discover our programs and meet our faculty during our annual open day."
+      fr: "Innover pour un Sahara durable et intelligent — 31 mai au 1er juin 2025 à l'EST de Laâyoune.",
+      ar: "الابتكار من أجل صحراء مستدامة وذكية — 31 ماي إلى 1 يونيو 2025.",
+      en: "Innovating for a sustainable and smart Sahara — May 31 to June 1, 2025."
     },
   },
   {
     id: 2,
-    image: campusLife,
-    date: "2025-02-28",
-    title: { fr: "Convention avec des entreprises régionales", ar: "اتفاقية مع شركات إقليمية", en: "Partnership with regional companies" },
+    image: campusBuilding,
+    date: "2025-05-13",
+    title: { fr: "Premier Master Class International", ar: "أول ماستر كلاس دولي", en: "First International Master Class" },
     summary: {
-      fr: "L'EST Laâyoune signe des conventions de partenariat avec plusieurs entreprises de la région.",
-      ar: "توقع المدرسة اتفاقيات شراكة مع عدة شركات في المنطقة.",
-      en: "EST Laayoune signs partnership agreements with several regional companies."
+      fr: "Innovation Technologique, Intelligence Artificielle et Économique à l'EST Laâyoune.",
+      ar: "الابتكار التكنولوجي والذكاء الاصطناعي والاقتصادي بالمدرسة العليا للتكنولوجيا بالعيون.",
+      en: "Technological Innovation, Artificial Intelligence and Economics at EST Laayoune."
     },
   },
   {
     id: 3,
-    image: heroCampus,
-    date: "2025-02-10",
-    title: { fr: "Résultats du semestre S1 publiés", ar: "نشر نتائج الفصل الأول", en: "S1 Semester results published" },
+    image: campusLife,
+    date: "2025-02-18",
+    title: { fr: "Symposium International en Économie et Finance", ar: "ندوة دولية في الاقتصاد والمالية", en: "International Symposium on Economics & Finance" },
     summary: {
-      fr: "Les résultats des examens du premier semestre sont désormais disponibles sur le portail étudiant.",
-      ar: "نتائج امتحانات الفصل الأول متاحة الآن على بوابة الطالب.",
-      en: "First semester exam results are now available on the student portal."
+      fr: "L'Économie et la Finance à l'ère de la Transformation Numérique et l'Intelligence Artificielle.",
+      ar: "الاقتصاد والمالية في عصر التحول الرقمي والذكاء الاصطناعي.",
+      en: "Economics and Finance in the era of Digital Transformation and AI."
     },
   },
 ];
