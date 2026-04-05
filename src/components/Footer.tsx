@@ -3,6 +3,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react
 import { useLang } from "@/lib/LangContext";
 import { t } from "@/lib/i18n";
 import logoEst from "@/assets/logo-est.png";
+import logoUiz from "@/assets/logo-uiz.png";
 
 const Footer = () => {
   const { lang } = useLang();
